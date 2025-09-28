@@ -1,0 +1,62 @@
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7ed321;
+}
+
+.sell-container {
+    border: 3px solid #4a90e2;
+    border-radius: 18px;
+    padding: 2rem;
+    background: white;
+    width: 50%;
+
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.checkmark{
+    color: green;
+}
+
+.img-like{
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-aspect{
+    width: 40%;
+    font-size: 1em;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    h1{text-align: center;}
+}
+
+@media screen and (max-width: 820px) {
+    .sell-container{width: 75%;}
+    .button-aspect{
+        width: 100%;
+    }
+}

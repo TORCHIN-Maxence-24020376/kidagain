@@ -1,0 +1,97 @@
+.admin-actions {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 2px solid #4a90e2;
+    border-radius: 1rem;
+    background: #f0f8ff;
+}
+
+.admin-actions h2 {
+    margin-top: 0;
+    color: #4a90e2;
+    text-align: center;
+}
+
+.admin-actions form {
+    display: grid;
+    gap: 1rem;
+}
+
+.admin-actions label {
+    font-weight: bold;
+}
+
+.admin-actions input,
+.admin-actions select {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.admin-actions button {
+    background: #4a90e2;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-actions button:hover {
+    background: #0070d1;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.product-info label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: var(--text-color, #2c2c2c);
+}
+
+.product-info input,
+.product-info select {
+    width: 90%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-info input:focus,
+.product-info select:focus {
+    outline: none;
+    border-color: var(--heavy, #4a90e2);
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+}
+
+/* Bouton global de sauvegarde */
+.submit-btn {
+    background: var(--heavy, #4a90e2);
+    color: #fff;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0070d1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

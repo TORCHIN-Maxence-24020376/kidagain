@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KidAgain</title>
+    <meta name="description" content="Contactez KidAgain pour vos dons, demandes ou questions sur notre ressourcerie familiale.">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    
+    <!-- Sécurité et Performance -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <img src="img/logo.webp" alt="Logo de Kidagain" fetchpriority="high">
+                <span>KidAgain</span>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+            <label for="nav-toggle" class="burger" aria-hidden="true">☰</label>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="vente.html">Vendre un objet</a>
+                <a href="#" id="actif">Contact</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1>Contactez-nous</h1>
+
+        <form>
+            <div>
+                <label for="nom">Nom complet <span class="required">*</span></label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div>
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="sujet">Sujet de votre demande</label>
+                <select id="sujet" name="sujet" >
+                    <option value="">Sélectionnez un sujet</option>
+                    <option value="vente">Ventes d'objets</option>
+                    <option value="redistribution">Demande de jouets</option>
+                    <option value="partenariat">Partenariat</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Votre message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="6" required maxlength="500" placeholder="Décrivez votre demande..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer le message</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <article></article>
+        <article><p>© 2025 KidAgain - Tous droits réservés</p></article>
+        <article>
+            <a href="#"><img src="img/facebook.svg" alt="facebook" loading="lazy"></a>
+            <a href="#"><img src="img/instagram.svg" alt="instagram" loading="lazy"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="linkedin" loading="lazy"></a>
+        </article>
+    </footer>
+</body>
+</html>

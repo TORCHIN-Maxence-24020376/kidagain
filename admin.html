@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Gestion des stocks</title>
+    <meta name="description" content="Interface d'administration pour gérer les stocks et ajouter des articles sur KidAgain.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/boutique.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <img src="img/logo.webp" alt="Logo de Kidagain" fetchpriority="high">
+                <span>KidAgain</span>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+            <label for="nav-toggle" class="burger" aria-hidden="true">☰</label>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="vente.html">Vendre un objet</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" id="actif">Admin</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1>Interface d’administration</h1>
+
+        <section class="admin-actions">
+            <h2>Ajouter un article</h2>
+            <form>
+                <div>
+                    <label for="name">Nom de l’article</label>
+                    <input type="text" id="name" name="name" placeholder="Ex: Poussette" required>
+                </div>
+                <div>
+                    <label for="price">Prix (€)</label>
+                    <input type="number" id="price" name="price" step="0.01" placeholder="Ex: 29.99" required>
+                </div>
+                <div>
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" name="stock" min="0" placeholder="Ex: 10" required>
+                </div>
+                <div>
+                    <label for="status">État</label>
+                        <select id="status" name="status" required>
+                            <option value="neuf">Neuf</option>
+                            <option value="tres-bon">Très bon état</option>
+                            <option value="bon">Bon état</option>
+                            <option value="moyen">État moyen</option>
+                        </select>
+                </div>
+                <button type="submit">Ajouter l’article</button>
+            </form>
+        </section>
+
+        <h2>Inventaire actuel</h2>
+        <section class="products-grid">
+
+            <!-- Table à langer -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/table-langer.webp" alt="Table à langer" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Table à langer</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="24.99"></label>
+                    <label>Stock: <input type="number" value="3"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option selected>Très bon état</option>
+                            <option>Bon état</option>
+                            <option>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <!-- Siège pour enfant -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/siege-enfant.webp" alt="Siège pour enfant" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Siège pour enfant</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="35.99"></label>
+                    <label>Stock: <input type="number" value="5"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option>Très bon état</option>
+                            <option selected>Bon état</option>
+                            <option>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Poussette -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/poussette.webp" alt="Poussette" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Poussette</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="69.99"></label>
+                    <label>Stock: <input type="number" value="13"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option>Très bon état</option>
+                            <option selected>Bon état</option>
+                            <option>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Livre -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/livres.webp" alt="Livre" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Livre</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="2.99"></label>
+                    <label>Stock: <input type="number" value="16"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option selected>Très bon état</option>
+                            <option>Bon état</option>
+                            <option>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Ballons -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/ballons.jpg" alt="Ballons" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ballons</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="4.99"></label>
+                    <label>Stock: <input type="number" value="26"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option>Très bon état</option>
+                            <option>Bon état</option>
+                            <option selected>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+                <!-- Jouet voitures -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img loading="lazy" src="img/products/voitures.webp" alt="Jouet voitures" class="product-img">
+                    </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jouet voitures</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="5.19"></label>
+                    <label>Stock: <input type="number" value="49"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option>Très bon état</option>
+                            <option selected>Bon état</option>
+                            <option>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Poupées -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/poupees.webp" alt="Poupées" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Poupées</h3>
+                    <label>Prix (€): <input type="number" step="0.01" value="16.99"></label>
+                    <label>Stock: <input type="number" value="8"></label>
+                    <label>État:
+                        <select>
+                            <option>Neuf</option>
+                            <option>Très bon état</option>
+                            <option>Bon état</option>
+                            <option selected>État moyen</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align:center; margin-top:2rem;">
+            <button class="submit-btn">💾 Sauvegarder les changements</button>
+        </div>
+    </main>
+
+    <footer>
+        <article></article>
+        <article><p>© 2025 KidAgain - Tous droits réservés</p></article>
+        <article>
+            <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+        </article>
+    </footer>
+</body>
+</html>

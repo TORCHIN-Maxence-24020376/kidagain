@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - KidAgain</title>
+    <meta name="description" content="Découvrez notre boutique de jouets d'occasion chez KidAgain. Produits de qualité à prix solidaires.">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    
+    <!-- Sécurité et Performance -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/boutique.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <img src="img/logo.webp" alt="Logo de Kidagain" fetchpriority="high">
+                <span>KidAgain</span>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+            <label for="nav-toggle" class="burger" aria-hidden="true">☰</label>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="#" id="actif">Boutique</a>
+                <a href="vente.html">Vendre un objet</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1>Ce que vous pouvez retrouver chez nous</h1>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/table-langer.webp" alt="Table à langer" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Table à langer</h3>
+                    <p class="product-price">24,99€</p>
+                    <p class="product-stock">Stock: 3</p>
+                    <p class="product-status">Très bon état</p>
+                </div>
+            </div>
+
+            <!-- Siège pour enfant -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/siege-enfant.webp" alt="Siège pour enfant" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Siège pour enfant</h3>
+                    <p class="product-price">35,99€</p>
+                    <p class="product-stock">Stock: 5</p>
+                    <p class="product-status">Bon état</p>
+                </div>
+            </div>
+
+            <!-- Poussette -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/poussette.webp" alt="Poussette" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Poussette</h3>
+                    <p class="product-price">69,99€</p>
+                    <p class="product-stock">Stock: 13</p>
+                    <p class="product-status">Bon état</p>
+                </div>
+            </div>
+
+            <!-- Livre interactif -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/livres.webp" alt="Livre" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Livre</h3>
+                    <p class="product-price">2,99€</p>
+                    <p class="product-stock">Stock: 16</p>
+                    <p class="product-status">Très bon état</p>
+                </div>
+            </div>
+
+            <!-- Ballons -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/ballons.jpg" alt="Ballons" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ballons</h3>
+                    <p class="product-price">4,99€</p>
+                    <p class="product-stock">Stock: 26</p>
+                    <p class="product-status mid">État moyen</p>
+                </div>
+            </div>
+
+            <!-- Jouet voitures -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/voitures.webp" alt="Jouet voitures" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Jouet voitures</h3>
+                    <p class="product-price">5,19€</p>
+                    <p class="product-stock">Stock: 49</p>
+                    <p class="product-status">Bon état</p>
+                </div>
+            </div>
+
+            <!-- Poupées -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img loading="lazy" src="img/products/poupees.webp" alt="Poupées" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Poupées</h3>
+                    <p class="product-price">16,99€</p>
+                    <p class="product-stock">Stock: 8</p>
+                    <p class="product-status mid">État moyen</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <h1>Quelque chose vous intéresse?</h1>
+    <h2>Rendez-vous <a href="#">chez nous!</a></h2>
+
+    <footer>
+        <article></article>
+        <article><p>© 2025 KidAgain - Tous droits réservés</p></article>
+        <article>
+            <a href="#"><img src="img/facebook.svg" alt="facebook" loading="lazy"></a>
+            <a href="#"><img src="img/instagram.svg" alt="instagram" loading="lazy"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="linkedin" loading="lazy"></a>
+        </article>
+    </footer>
+
+</body>
+</html>
+
