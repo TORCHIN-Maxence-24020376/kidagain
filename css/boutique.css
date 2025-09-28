@@ -1,10 +1,12 @@
-
 main{
-    padding: 2rem 1rem;
-    margin-top: 2em;
-    border: 3px dashed #4a90e2;
-    border-radius: 18px;
-    background: white;
+    section{
+        padding: 2rem 1rem;
+        margin-top: 2em;
+        border: 3px dashed #4a90e2;
+        border-radius: 18px;
+        background: white;
+        width: 60%;
+    }
 }
 
 .products-grid {
@@ -13,6 +15,7 @@ main{
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
+    justify-content: space-around;
 }
 
 .product-card {
@@ -84,3 +87,12 @@ main{
 h1, h2{text-align: center;}
 
 h2 a{color: var(--heavy);}
+
+@media screen and (max-width: 820px) {
+    main{
+        section{
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
