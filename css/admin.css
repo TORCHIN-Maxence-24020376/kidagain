@@ -87,6 +87,21 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.remove-item {
+    background: #ff4d4d;
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.remove-item:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 @media screen and (max-width: 820px) {
     .admin-actions{
         width: 80%;
